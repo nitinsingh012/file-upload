@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.upload-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 700px;
+    padding: 1rem;
+    border-radius: 40px;
+    border: 1px solid #ccc
+}
+.upload-header{
+    display: flex;
+    color: grey;
+    gap: 0.6rem;
+    align-items: center;
+}
+.upload-header span{
+    font-size: 15px;
+}
+.uploader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.uploader svg{
+    font-size: 1.6rem;
+}
+.uploader span{
+    font-size: 15px;
+}
+.uploader:hover{
+    background-color: rgb(197, 197, 255);
+    color: rgb(74, 74, 255);
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.single-img {
+    width: 62px;
+    height: 62px;
+    background-color: rgb(214, 214, 214);
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    position: relative; /* Added for correct positioning of the icon */
+  }
+  
+  .single-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .single-img:hover {
+    border: 1px solid pink;
+  }
+  
+  .single-img svg {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    padding: 0.2rem;
+    color: red;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .single-img:hover svg {
+    display: inline-block;
+  }
+.preview{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}  
